@@ -2,4 +2,4 @@
 
 <button (click)="changeTitle()">Cambiar Titulo</button>
 
-<app-product title="Este es mi Titulo"></app-product>
+<app-product [product]="product" *ngFor="let product of products"></app-product>
